@@ -16,12 +16,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" content="#f8f8f8">
   
-  <title>BUUCTF_lucky_guy - ycna07</title>
+  <title>BUUCTF_新年快乐 WriteUp - ycna07</title>
 
   
     <meta name="description" content="下载后直接运行，提示输入flag，输入2233，wrong。DIE查exe，发现32位，加upx壳 使用PEID插件脱壳失败（10年前的老东西不管用了），查阅后找到工具(可以手动脱壳，明天补上吧)，脱壳后拖入ida。  shift+f12后没有发现类似flag的东西  继续看伪代码，得知str2即为flag，直接提交flag{HappyNewYear!}，成功。 总结：新年快乐主要是有壳，所以脱壳">
 <meta property="og:type" content="article">
-<meta property="og:title" content="BUUCTF_lucky_guy">
+<meta property="og:title" content="BUUCTF_新年快乐 WriteUp">
 <meta property="og:url" content="https://ycna07.github.io/2024/03/25/CTF/BUUCTF_%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90%20WriteUp/index.html">
 <meta property="og:site_name" content="ycna07">
 <meta property="og:description" content="下载后直接运行，提示输入flag，输入2233，wrong。DIE查exe，发现32位，加upx壳 使用PEID插件脱壳失败（10年前的老东西不管用了），查阅后找到工具(可以手动脱壳，明天补上吧)，脱壳后拖入ida。  shift+f12后没有发现类似flag的东西  继续看伪代码，得知str2即为flag，直接提交flag{HappyNewYear!}，成功。 总结：新年快乐主要是有壳，所以脱壳">
@@ -44,7 +44,7 @@
 <meta property="og:image" content="https://ycna07.github.io/Pasted%20image%2020240306212108.png">
 <meta property="og:image" content="https://ycna07.github.io/Pasted%20image%2020240306212128.png">
 <meta property="article:published_time" content="2024-03-25T12:18:17.228Z">
-<meta property="article:modified_time" content="2024-03-26T11:03:17.750Z">
+<meta property="article:modified_time" content="2024-03-26T11:57:12.774Z">
 <meta property="article:author" content="ycna07">
 <meta property="article:tag" content="CTFWP&#x2F;upx">
 <meta name="twitter:card" content="summary">
@@ -81,7 +81,7 @@
 <div class="widgets">
 
 
-<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/03/25/CTF/BUUCTF_Hello%20Word/"><span class="title">BUUCTF_lucky_guy</span></a><a class="item title" href="/2024/03/25/CTF/BUUCTF-easyre%20Writeup/"><span class="title">BUUCTF_四题合集</span></a><a class="item title" href="/2024/03/25/CTF/BUUCTF_%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90%20WriteUp/"><span class="title">BUUCTF_lucky_guy</span></a><a class="item title" href="/2024/03/25/CTF/BUUCTF_%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84flag/"><span class="title">BUUCTF_不一样的flag</span></a><a class="item title" href="/2024/03/25/CTF/BUUCTF_SimpleRev/"><span class="title">BUUCTF_SimpleRev</span></a><a class="item title" href="/2024/03/25/CTF/BUUCTF_lucky_guy/"><span class="title">BUUCTF_lucky_guy</span></a></div></widget>
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/03/25/CTF/BUUCTF_Hello%20Word/"><span class="title">BUUCTF_Hello Word</span></a><a class="item title" href="/2024/03/25/CTF/BUUCTF_%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90%20WriteUp/"><span class="title">BUUCTF_新年快乐 WriteUp</span></a><a class="item title" href="/2024/03/25/CTF/BUUCTF-easyre%20Writeup/"><span class="title">BUUCTF_四题合集</span></a><a class="item title" href="/2024/03/25/CTF/BUUCTF_%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84flag/"><span class="title">BUUCTF_不一样的flag</span></a><a class="item title" href="/2024/03/25/CTF/BUUCTF_SimpleRev/"><span class="title">BUUCTF_SimpleRev</span></a><a class="item title" href="/2024/03/25/CTF/BUUCTF_lucky_guy/"><span class="title">BUUCTF_lucky_guy</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
@@ -94,12 +94,12 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-03-25T12:18:17.228Z">2024-03-25</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-03-26T11:03:17.750Z">2024-03-26</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-03-25T12:18:17.228Z">2024-03-25</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-03-26T11:57:12.774Z">2024-03-26</time></span></div></div></div>
     
     <div class="bottom only-title">
       
       <div class="text-area">
-        <h1 class="text title"><span>BUUCTF_lucky_guy</span></h1>
+        <h1 class="text title"><span>BUUCTF_新年快乐 WriteUp</span></h1>
         
       </div>
     </div>
@@ -135,7 +135,7 @@
     </section>
     </div>
 </article>
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/03/25/CTF/BUUCTF_%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84flag/">BUUCTF_不一样的flag</a></div></section></div>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2024/03/26/learn/%E6%B1%87%E7%BC%96/">2024-03-26</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/03/25/CTF/BUUCTF_%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84flag/">BUUCTF_不一样的flag</a></div></section></div>
 
 
 
