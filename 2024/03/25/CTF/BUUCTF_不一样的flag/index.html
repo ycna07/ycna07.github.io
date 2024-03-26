@@ -16,12 +16,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" content="#f8f8f8">
   
-  <title>ycna07</title>
+  <title>BUUCTF_不一样的flag - ycna07</title>
 
   
     <meta name="description" content="DIE查出32位无壳，拖入ida 看到v3带有可疑字符串，分析伪代码，然鹅并没有什么用 直接运行程序发现可以1，2反复输入但输入3，4规律未知。 到这里卡住了。于是查阅WPBUUCTF Reverse 不一样的flag_ctf buu reverse不一样的flag-CSDN博客 呵呵，看完以后明白了up，down的提示，然鹅以5分割迷宫有点考验眼力了。 得到迷宫后可以直接走出2224411442">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ycna07">
+<meta property="og:title" content="BUUCTF_不一样的flag">
 <meta property="og:url" content="https://ycna07.github.io/2024/03/25/CTF/BUUCTF_%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84flag/index.html">
 <meta property="og:site_name" content="ycna07">
 <meta property="og:description" content="DIE查出32位无壳，拖入ida 看到v3带有可疑字符串，分析伪代码，然鹅并没有什么用 直接运行程序发现可以1，2反复输入但输入3，4规律未知。 到这里卡住了。于是查阅WPBUUCTF Reverse 不一样的flag_ctf buu reverse不一样的flag-CSDN博客 呵呵，看完以后明白了up，down的提示，然鹅以5分割迷宫有点考验眼力了。 得到迷宫后可以直接走出2224411442">
@@ -30,14 +30,15 @@
 <meta property="og:image" content="https://ycna07.github.io/2024/03/25/CTF/BUUCTF_%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84flag/image-20240326180106817.png">
 <meta property="og:image" content="https://ycna07.github.io/2024/03/25/CTF/BUUCTF_%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84flag/image-20240326180126471.png">
 <meta property="article:published_time" content="2024-03-25T12:18:17.223Z">
-<meta property="article:modified_time" content="2024-03-26T10:01:28.496Z">
+<meta property="article:modified_time" content="2024-03-26T11:03:00.046Z">
 <meta property="article:author" content="ycna07">
+<meta property="article:tag" content="CTFWP&#x2F;迷宫">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://ycna07.github.io/2024/03/25/CTF/BUUCTF_%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84flag/image-20240326180045632.png">
   
   
   
-  
+  <meta name="keywords" content="CTFWP/迷宫">
 
   <!-- feed -->
   
@@ -66,7 +67,7 @@
 <div class="widgets">
 
 
-<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/03/25/CTF/BUUCTF_lucky_guy/"><span class="title">BUUCTF_lucky_guy</span></a></div></widget>
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2024/03/25/CTF/BUUCTF_Hello%20Word/"><span class="title">BUUCTF_lucky_guy</span></a><a class="item title" href="/2024/03/25/CTF/BUUCTF-easyre%20Writeup/"><span class="title">BUUCTF_四题合集</span></a><a class="item title" href="/2024/03/25/CTF/BUUCTF_%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90%20WriteUp/"><span class="title">BUUCTF_lucky_guy</span></a><a class="item title" href="/2024/03/25/CTF/BUUCTF_%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84flag/"><span class="title">BUUCTF_不一样的flag</span></a><a class="item title" href="/2024/03/25/CTF/BUUCTF_SimpleRev/"><span class="title">BUUCTF_SimpleRev</span></a><a class="item title" href="/2024/03/25/CTF/BUUCTF_lucky_guy/"><span class="title">BUUCTF_lucky_guy</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
@@ -79,7 +80,15 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-03-25T12:18:17.223Z">2024-03-25</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-03-26T10:01:28.496Z">2024-03-26</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-03-25T12:18:17.223Z">2024-03-25</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-03-26T11:03:00.046Z">2024-03-26</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>BUUCTF_不一样的flag</span></h1>
+        
+      </div>
+    </div>
     
   </div>
   </div><article class="md-text content"><p>DIE查出32位无壳，拖入ida<br><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/2024/03/25/CTF/BUUCTF_%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84flag/image-20240326180045632.png"></p>
@@ -98,7 +107,7 @@
     </section>
     </div>
 </article>
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2024/03/25/CTF/BUUCTF_%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90%20WriteUp/">2024-03-25</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/03/25/CTF/BUUCTF_SimpleRev/">2024-03-25</a></div></section></div>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2024/03/25/CTF/BUUCTF_%E6%96%B0%E5%B9%B4%E5%BF%AB%E4%B9%90%20WriteUp/">BUUCTF_lucky_guy</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/03/25/CTF/BUUCTF_SimpleRev/">BUUCTF_SimpleRev</a></div></section></div>
 
 
 
