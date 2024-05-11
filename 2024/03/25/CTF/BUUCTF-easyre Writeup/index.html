@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="easere 下载附件解压得到easyre.exe(补图)  直接运行没有反应，查阅WP……拖入ida打开（其实先用了peid查壳发现没有壳又用了DIE，才确定可以拖入ida，一开始有点不敢确定没壳😭😭） 补图  直接看到flag提交显示成功； BUUCTF_reverse_1 WriteUp下载得到附件  拖入DIE查壳（补图） 64位ida打开看到main函数流程图里已经有flag了 直接">
+    <meta name="description" content="easere 下载附件解压得到easyre.exe(补图)  直接运行没有反应，查阅WP……拖入ida打开补图  直接看到flag提交显示成功； BUUCTF_reverse_1 WriteUp下载得到附件  拖入DIE查壳（补图） 64位ida打开看到main函数流程图里已经有flag了 直接提交，失败，继续分析；好吧有点灰心了，看一眼前辈WP知道这是没有经过程序处理的原始数据补上反汇编后流程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="BUUCTF_四题合集">
 <meta property="og:url" content="https://ycna07.github.io/2024/03/25/CTF/BUUCTF-easyre%20Writeup/index.html">
 <meta property="og:site_name" content="ycna07">
-<meta property="og:description" content="easere 下载附件解压得到easyre.exe(补图)  直接运行没有反应，查阅WP……拖入ida打开（其实先用了peid查壳发现没有壳又用了DIE，才确定可以拖入ida，一开始有点不敢确定没壳😭😭） 补图  直接看到flag提交显示成功； BUUCTF_reverse_1 WriteUp下载得到附件  拖入DIE查壳（补图） 64位ida打开看到main函数流程图里已经有flag了 直接">
+<meta property="og:description" content="easere 下载附件解压得到easyre.exe(补图)  直接运行没有反应，查阅WP……拖入ida打开补图  直接看到flag提交显示成功； BUUCTF_reverse_1 WriteUp下载得到附件  拖入DIE查壳（补图） 64位ida打开看到main函数流程图里已经有flag了 直接提交，失败，继续分析；好吧有点灰心了，看一眼前辈WP知道这是没有经过程序处理的原始数据补上反汇编后流程">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://ycna07.github.io/2024/03/25/CTF/BUUCTF-easyre%20Writeup/image-20240326173408046.png">
 <meta property="og:image" content="https://ycna07.github.io/2024/03/25/CTF/BUUCTF-easyre%20Writeup/image-20240326173419076.png">
@@ -35,7 +35,7 @@
 <meta property="og:image" content="https://ycna07.github.io/2024/03/25/CTF/BUUCTF-easyre%20Writeup/image-20240326173721982.png">
 <meta property="og:image" content="https://ycna07.github.io/2024/03/25/CTF/BUUCTF-easyre%20Writeup/image-20240326173731949.png">
 <meta property="article:published_time" content="2024-03-25T12:18:17.202Z">
-<meta property="article:modified_time" content="2024-03-26T11:05:07.002Z">
+<meta property="article:modified_time" content="2024-05-11T09:44:27.624Z">
 <meta property="article:author" content="ycna07">
 <meta property="article:tag" content="CTFWP&#x2F;Xor">
 <meta name="twitter:card" content="summary">
@@ -183,8 +183,7 @@
     <h1 id="easere"><a href="#easere" class="headerlink" title="easere"></a>easere</h1><p><img src="/2024/03/25/CTF/BUUCTF-easyre%20Writeup/image-20240326173408046.png"></p>
 <p>下载附件解压得到easyre.exe(补图)</p>
 <p><img src="/2024/03/25/CTF/BUUCTF-easyre%20Writeup/image-20240326173419076.png"></p>
-<p>直接运行没有反应，查阅WP……<br>拖入ida打开<del>（其实先用了peid查壳发现没有壳又用了DIE，才确定可以拖入ida，一开始有点不敢确定没壳😭😭）</del></p>
-<p>补图<br><img src="/2024/03/25/CTF/BUUCTF-easyre%20Writeup/image-20240326173431265.png"></p>
+<p>直接运行没有反应，查阅WP……<br>拖入ida打开<br>补图<br><img src="/2024/03/25/CTF/BUUCTF-easyre%20Writeup/image-20240326173431265.png"></p>
 <p><img src="/2024/03/25/CTF/BUUCTF-easyre%20Writeup/image-20240326173445808.png"></p>
 <p>直接看到flag<br>提交显示成功；</p>
 <h1 id="BUUCTF-reverse-1-WriteUp"><a href="#BUUCTF-reverse-1-WriteUp" class="headerlink" title="BUUCTF_reverse_1 WriteUp"></a>BUUCTF_reverse_1 WriteUp</h1><p>下载得到附件</p>

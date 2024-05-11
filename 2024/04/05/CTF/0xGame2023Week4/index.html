@@ -27,7 +27,7 @@
 <meta property="og:image" content="https://ycna07.github.io/2024/04/05/CTF/0xGame2023Week4/image-20240506203243889.png">
 <meta property="og:image" content="https://ycna07.github.io/2024/04/05/CTF/0xGame2023Week4/image-20240506203437468.png">
 <meta property="article:published_time" content="2024-04-05T08:45:19.821Z">
-<meta property="article:modified_time" content="2024-05-06T12:40:13.143Z">
+<meta property="article:modified_time" content="2024-05-11T09:38:01.073Z">
 <meta property="article:author" content="ycna07">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://ycna07.github.io/2024/04/05/CTF/0xGame2023Week4/image-20240405164527875.png">
@@ -94,8 +94,6 @@
     <br/>
     <span id="actions">
       <ul>
-        
-        <li><a class="icon" aria-label="上一篇" href="/2024/04/23/%E9%80%86%E5%90%91%E5%B7%A5%E7%A8%8B%E6%A0%B8%E5%BF%83%E5%8E%9F%E7%90%86/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
         
         <li><a class="icon" aria-label="下一篇" href="/2024/04/05/CTF/0xGame2023Week3/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
@@ -179,7 +177,7 @@
 <p><img src="/2024/04/05/CTF/0xGame2023Week4/image-20240506202128040.png"></p>
 <p><a target="_blank" rel="noopener" href="https://www.runoob.com/cprogramming/c-function-memchr.html">C 库函数 – memchr() | 菜鸟教程 (runoob.com)</a><br>有时候搞不清这是十进制45还是十六进制45<br>查表45d&#x3D;”-“,45h&#x3D;”E”<br>根据WP推测int类应该是”-“<br>参数逆向就这些<br>接下来是文件路径<br><img src="/2024/04/05/CTF/0xGame2023Week4/image-20240506203156170.png"></p>
 <p>查一下这个明显的api函数<br><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows/win32/api/fileapi/nf-fileapi-gettemppatha">getTempPathA 函数 (fileapi.h) - Win32 apps | Microsoft Learn</a><br><img src="/2024/04/05/CTF/0xGame2023Week4/image-20240506203243889.png"><br>写的时候用x64dbg查了一下确实是这个目录<br>然后用idapro<br>Patch掉deletefile()函数<br>在目录下找就行了<br><img src="/2024/04/05/CTF/0xGame2023Week4/image-20240506203437468.png"></p>
-<p>24-05-06完全复现<br>算法祭司<br>解密题，找key和IV很痛苦<br>就这样吧，不想写了<br>0xGame结束（re）</p>
+<p>24-05-06完全复现<br>算法祭司<br>解密题，找key和IV即可</p>
 
   </div>
 </article>
