@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/en/posts/</loc>
+    <loc>/en/posts/</loc>
     <lastmod>2024-09-25T21:43:14+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/</loc>
+    <loc>/en/</loc>
     <lastmod>2024-09-25T21:43:14+08:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/en/posts/blog/</loc>
+    <loc>/en/posts/blog/</loc>
   </url><url>
-    <loc>//localhost:1313/en/categories/</loc>
+    <loc>/en/categories/</loc>
   </url><url>
-    <loc>//localhost:1313/en/posts/life/</loc>
+    <loc>/en/posts/life/</loc>
   </url><url>
-    <loc>//localhost:1313/en/tags/</loc>
+    <loc>/en/tags/</loc>
   </url><url>
-    <loc>//localhost:1313/en/posts/writeups/</loc>
+    <loc>/en/posts/writeups/</loc>
   </url><url>
-    <loc>//localhost:1313/en/posts/blog/ida_python/%E4%BF%AE%E6%94%B9ida_python%E7%89%88%E6%9C%AC/</loc>
+    <loc>/en/posts/blog/ida_python/%E4%BF%AE%E6%94%B9ida_python%E7%89%88%E6%9C%AC/</loc>
   </url><url>
-    <loc>//localhost:1313/archives/</loc>
+    <loc>/archives/</loc>
   </url><url>
-    <loc>//localhost:1313/en/search/</loc>
+    <loc>/en/search/</loc>
   </url>
 </urlset>
