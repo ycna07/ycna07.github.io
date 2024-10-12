@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/en/posts/</loc>
+    <loc>https://ycna07.github.io/en/posts/</loc>
     <lastmod>2024-09-25T21:43:14+08:00</lastmod>
   </url><url>
-    <loc>/en/</loc>
+    <loc>https://ycna07.github.io/en/</loc>
     <lastmod>2024-09-25T21:43:14+08:00</lastmod>
   </url><url>
-    <loc>/en/posts/blog/</loc>
+    <loc>https://ycna07.github.io/en/posts/blog/</loc>
   </url><url>
-    <loc>/en/categories/</loc>
+    <loc>https://ycna07.github.io/en/categories/</loc>
   </url><url>
-    <loc>/en/posts/life/</loc>
+    <loc>https://ycna07.github.io/en/posts/life/</loc>
   </url><url>
-    <loc>/en/tags/</loc>
+    <loc>https://ycna07.github.io/en/tags/</loc>
   </url><url>
-    <loc>/en/posts/writeups/</loc>
+    <loc>https://ycna07.github.io/en/posts/writeups/</loc>
   </url><url>
-    <loc>/en/posts/blog/ida_python/%E4%BF%AE%E6%94%B9ida_python%E7%89%88%E6%9C%AC/</loc>
+    <loc>https://ycna07.github.io/en/posts/blog/ida_python/%E4%BF%AE%E6%94%B9ida_python%E7%89%88%E6%9C%AC/</loc>
   </url><url>
-    <loc>/archives/</loc>
+    <loc>https://ycna07.github.io/archives/</loc>
   </url><url>
-    <loc>/en/search/</loc>
+    <loc>https://ycna07.github.io/en/search/</loc>
   </url>
 </urlset>

@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>YCna07`s Blog</title>
-    <link>/en/</link>
+    <link>https://ycna07.github.io/en/</link>
     <description>Recent content on YCna07`s Blog</description>
     <generator>Hugo -- 0.134.3</generator>
     <language>en-US</language>
     <copyright>ycna07</copyright>
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://ycna07.github.io/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>修改IDA_Python版本</title>
-      <link>/en/posts/blog/ida_python/%E4%BF%AE%E6%94%B9ida_python%E7%89%88%E6%9C%AC/</link>
+      <link>https://ycna07.github.io/en/posts/blog/ida_python/%E4%BF%AE%E6%94%B9ida_python%E7%89%88%E6%9C%AC/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/en/posts/blog/ida_python/%E4%BF%AE%E6%94%B9ida_python%E7%89%88%E6%9C%AC/</guid>
+      <guid>https://ycna07.github.io/en/posts/blog/ida_python/%E4%BF%AE%E6%94%B9ida_python%E7%89%88%E6%9C%AC/</guid>
       <description>&lt;p&gt;使用需要的版本替换ida文件夹中的python3文件夹即可
 &lt;a href=&#34;file:///C:%5CUsers%5CAdministrator%5CAppData%5CLocal%5CPrograms%5CPython&#34;&gt;python默认安装位置&lt;/a&gt;
 &lt;img loading=&#34;lazy&#34; src=&#34;image-20240923100421866.png&#34; alt=&#34;IDA_Python位置&#34;  /&gt;
