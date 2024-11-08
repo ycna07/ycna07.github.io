@@ -7,8 +7,15 @@
     <generator>Hugo -- 0.112.4</generator>
     <language>en-US</language>
     <copyright>ycna07</copyright>
-    <lastBuildDate>Wed, 06 Nov 2024 21:18:15 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 08 Nov 2024 01:32:25 +0000</lastBuildDate>
     <atom:link href="https://ycna07.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2024年11月Vscode&#43;xmake&#43;clangd&#43;mingw&#43;cpptools配置windowsC&#43;&#43;环境</title>
+      <link>https://ycna07.github.io/posts/blog/vscode&#43;xmake&#43;clangd&#43;mingw&#43;cpptools%E9%85%8D%E7%BD%AEwindowsc&#43;&#43;%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Fri, 08 Nov 2024 08:51:37 +0800</pubDate>
+      <guid>https://ycna07.github.io/posts/blog/vscode&#43;xmake&#43;clangd&#43;mingw&#43;cpptools%E9%85%8D%E7%BD%AEwindowsc&#43;&#43;%E7%8E%AF%E5%A2%83/</guid>
+      <description>vscode：编辑器 xmake：基于 Lua 的轻量级跨平台构建工具 clangd：高性能，智能代码提示与补全 mingw：配置简单，生成的可执行文件体</description>
+    </item>
     <item>
       <title>0xGame2024 Pwn&amp;Rev</title>
       <link>https://ycna07.github.io/posts/writeups/0xgame2024/</link>
