@@ -9,6 +9,13 @@
     <copyright>ycna07</copyright>
     <atom:link href="https://ycna07.github.io/posts/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Github—Action学习</title>
+      <link>https://ycna07.github.io/posts/blog/githubaction%E5%AD%A6%E4%B9%A0/</link>
+      <pubDate>Sat, 14 Dec 2024 16:04:39 +0800</pubDate>
+      <guid>https://ycna07.github.io/posts/blog/githubaction%E5%AD%A6%E4%B9%A0/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Vscode Xmake调试跳断点分析</title>
       <link>https://ycna07.github.io/posts/blog/vscode-xmake%E8%B0%83%E8%AF%95%E8%B7%B3%E6%96%AD%E7%82%B9%E5%88%86%E6%9E%90/</link>
       <pubDate>Fri, 08 Nov 2024 12:18:31 +0800</pubDate>
@@ -21,6 +28,13 @@
       <pubDate>Fri, 08 Nov 2024 08:51:37 +0800</pubDate>
       <guid>https://ycna07.github.io/posts/blog/vscode&#43;xmake&#43;clangd&#43;mingw&#43;cpptools%E9%85%8D%E7%BD%AEwindowsc&#43;&#43;%E7%8E%AF%E5%A2%83/</guid>
       <description>vscode：编辑器 xmake：基于 Lua 的轻量级跨平台构建工具 clangd：高性能，智能代码提示与补全 mingw：配置简单，生成的可执行文件体</description>
+    </item>
+    <item>
+      <title>Git_Usage</title>
+      <link>https://ycna07.github.io/posts/blog/git_usage/</link>
+      <pubDate>Tue, 05 Nov 2024 21:54:30 +0800</pubDate>
+      <guid>https://ycna07.github.io/posts/blog/git_usage/</guid>
+      <description>reference 菜鸟上的Git教程 查看暂存区 git add filename # 将单个文件添加到暂存区 git add . # 将工作区中的所有修改添加到暂存区 git status # 查看哪些文件在暂存区中 git rm 删除gi</description>
     </item>
     <item>
       <title>SROP</title>
